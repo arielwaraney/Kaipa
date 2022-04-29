@@ -42,6 +42,7 @@ class DetailViewController: UIViewController {
         let delete = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deletePressed))
         navigationItem.rightBarButtonItem = delete
         
+        itemImage.layer.cornerRadius = 10.0
         itemImage.image = img
         if favorite == true {
             itemFavorite.setImage(UIImage(systemName: "heart.fill"), for: .normal)
