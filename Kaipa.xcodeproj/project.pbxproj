@@ -9,23 +9,39 @@
 /* Begin PBXBuildFile section */
 		A9D0141E2817D1FE0033ED46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0141D2817D1FE0033ED46 /* AppDelegate.swift */; };
 		A9D014202817D1FE0033ED46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0141F2817D1FE0033ED46 /* SceneDelegate.swift */; };
-		A9D014222817D1FE0033ED46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D014212817D1FE0033ED46 /* ViewController.swift */; };
+		A9D014222817D1FE0033ED46 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D014212817D1FE0033ED46 /* SelectionViewController.swift */; };
 		A9D014252817D1FE0033ED46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D014232817D1FE0033ED46 /* Main.storyboard */; };
-		A9D014282817D1FE0033ED46 /* Kaipa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9D014262817D1FE0033ED46 /* Kaipa.xcdatamodeld */; };
 		A9D0142A2817D1FF0033ED46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D014292817D1FF0033ED46 /* Assets.xcassets */; };
 		A9D0142D2817D1FF0033ED46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D0142B2817D1FF0033ED46 /* LaunchScreen.storyboard */; };
+		A9D014382818BDF50033ED46 /* Selection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D014362818BDF50033ED46 /* Selection.storyboard */; };
+		A9D0143A2818BE140033ED46 /* Selected.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D014392818BE140033ED46 /* Selected.storyboard */; };
+		A9D0143D2818BE6B0033ED46 /* SelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0143C2818BE6A0033ED46 /* SelectedViewController.swift */; };
+		A9D014442818C7390033ED46 /* ItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D014432818C7390033ED46 /* ItemTableCell.swift */; };
+		A9D014472818D2360033ED46 /* AddItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D014452818D2360033ED46 /* AddItem.storyboard */; };
+		A9D014492818DA140033ED46 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D014482818DA140033ED46 /* AddItemViewController.swift */; };
+		A9D0144E28194B140033ED46 /* Kaipa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9D0144C28194B140033ED46 /* Kaipa.xcdatamodeld */; };
+		A9D01451281A824F0033ED46 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D0144F281A824F0033ED46 /* Detail.storyboard */; };
+		A9D01453281A84C90033ED46 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D01452281A84C90033ED46 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9D0141A2817D1FE0033ED46 /* Kaipa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaipa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D0141D2817D1FE0033ED46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D0141F2817D1FE0033ED46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9D014212817D1FE0033ED46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9D014212817D1FE0033ED46 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		A9D014242817D1FE0033ED46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A9D014272817D1FE0033ED46 /* Kaipa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kaipa.xcdatamodel; sourceTree = "<group>"; };
 		A9D014292817D1FF0033ED46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9D0142C2817D1FF0033ED46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9D0142E2817D1FF0033ED46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D014372818BDF50033ED46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Kaipa/Base.lproj/Selection.storyboard; sourceTree = "<group>"; };
+		A9D014392818BE140033ED46 /* Selected.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Selected.storyboard; sourceTree = "<group>"; };
+		A9D0143C2818BE6A0033ED46 /* SelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedViewController.swift; sourceTree = "<group>"; };
+		A9D014432818C7390033ED46 /* ItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableCell.swift; sourceTree = "<group>"; };
+		A9D014462818D2360033ED46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Kaipa/View/Kaipa/Base.lproj/AddItem.storyboard; sourceTree = "<group>"; };
+		A9D014482818DA140033ED46 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		A9D0144D28194B140033ED46 /* Kaipa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kaipa.xcdatamodel; sourceTree = "<group>"; };
+		A9D01450281A824F0033ED46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Kaipa/View/Kaipa/Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
+		A9D01452281A84C90033ED46 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +76,46 @@
 			children = (
 				A9D0141D2817D1FE0033ED46 /* AppDelegate.swift */,
 				A9D0141F2817D1FE0033ED46 /* SceneDelegate.swift */,
-				A9D014212817D1FE0033ED46 /* ViewController.swift */,
-				A9D014232817D1FE0033ED46 /* Main.storyboard */,
+				A9D0143F2818C54A0033ED46 /* Model */,
+				A9D014422818C5850033ED46 /* View */,
+				A9D0143E2818BE760033ED46 /* Controller */,
 				A9D014292817D1FF0033ED46 /* Assets.xcassets */,
 				A9D0142B2817D1FF0033ED46 /* LaunchScreen.storyboard */,
 				A9D0142E2817D1FF0033ED46 /* Info.plist */,
-				A9D014262817D1FE0033ED46 /* Kaipa.xcdatamodeld */,
 			);
 			path = Kaipa;
+			sourceTree = "<group>";
+		};
+		A9D0143E2818BE760033ED46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A9D0143C2818BE6A0033ED46 /* SelectedViewController.swift */,
+				A9D014212817D1FE0033ED46 /* SelectionViewController.swift */,
+				A9D014482818DA140033ED46 /* AddItemViewController.swift */,
+				A9D014432818C7390033ED46 /* ItemTableCell.swift */,
+				A9D01452281A84C90033ED46 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9D0143F2818C54A0033ED46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9D0144C28194B140033ED46 /* Kaipa.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9D014422818C5850033ED46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9D014392818BE140033ED46 /* Selected.storyboard */,
+				A9D014362818BDF50033ED46 /* Selection.storyboard */,
+				A9D014232817D1FE0033ED46 /* Main.storyboard */,
+				A9D0144F281A824F0033ED46 /* Detail.storyboard */,
+				A9D014452818D2360033ED46 /* AddItem.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D0142D2817D1FF0033ED46 /* LaunchScreen.storyboard in Resources */,
+				A9D014472818D2360033ED46 /* AddItem.storyboard in Resources */,
+				A9D014382818BDF50033ED46 /* Selection.storyboard in Resources */,
 				A9D0142A2817D1FF0033ED46 /* Assets.xcassets in Resources */,
+				A9D01451281A824F0033ED46 /* Detail.storyboard in Resources */,
+				A9D0143A2818BE140033ED46 /* Selected.storyboard in Resources */,
 				A9D014252817D1FE0033ED46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,10 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D014282817D1FE0033ED46 /* Kaipa.xcdatamodeld in Sources */,
-				A9D014222817D1FE0033ED46 /* ViewController.swift in Sources */,
+				A9D0144E28194B140033ED46 /* Kaipa.xcdatamodeld in Sources */,
+				A9D014222817D1FE0033ED46 /* SelectionViewController.swift in Sources */,
+				A9D0143D2818BE6B0033ED46 /* SelectedViewController.swift in Sources */,
+				A9D014492818DA140033ED46 /* AddItemViewController.swift in Sources */,
 				A9D0141E2817D1FE0033ED46 /* AppDelegate.swift in Sources */,
+				A9D014442818C7390033ED46 /* ItemTableCell.swift in Sources */,
 				A9D014202817D1FE0033ED46 /* SceneDelegate.swift in Sources */,
+				A9D01453281A84C90033ED46 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +221,30 @@
 				A9D0142C2817D1FF0033ED46 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9D014362818BDF50033ED46 /* Selection.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D014372818BDF50033ED46 /* Base */,
+			);
+			name = Selection.storyboard;
+			sourceTree = "<group>";
+		};
+		A9D014452818D2360033ED46 /* AddItem.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D014462818D2360033ED46 /* Base */,
+			);
+			name = AddItem.storyboard;
+			sourceTree = "<group>";
+		};
+		A9D0144F281A824F0033ED46 /* Detail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D01450281A824F0033ED46 /* Base */,
+			);
+			name = Detail.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -296,6 +376,7 @@
 				DEVELOPMENT_TEAM = P7PL5J4AMN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kaipa/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access your photo library permission.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,6 +405,7 @@
 				DEVELOPMENT_TEAM = P7PL5J4AMN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kaipa/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access your photo library permission.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -366,12 +448,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A9D014262817D1FE0033ED46 /* Kaipa.xcdatamodeld */ = {
+		A9D0144C28194B140033ED46 /* Kaipa.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A9D014272817D1FE0033ED46 /* Kaipa.xcdatamodel */,
+				A9D0144D28194B140033ED46 /* Kaipa.xcdatamodel */,
 			);
-			currentVersion = A9D014272817D1FE0033ED46 /* Kaipa.xcdatamodel */;
+			currentVersion = A9D0144D28194B140033ED46 /* Kaipa.xcdatamodel */;
 			path = Kaipa.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

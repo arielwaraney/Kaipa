@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sQU-VJ-BbF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selected-->
+        <scene sceneID="kqs-5T-jCS">
+            <objects>
+                <navigationController id="sQU-VJ-BbF" customClass="StyleNavigationController" customModule="Kaipa" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Selected" image="clock.arrow.circlepath" catalog="system" id="cvO-Dw-xlO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bPX-ux-frQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.0" green="0.29411764709999999" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5tw-sD-o4P" kind="relationship" relationship="rootViewController" id="d5S-fr-2W3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uiA-u6-tAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="518"/>
+        </scene>
+        <!--Selected View Controller-->
+        <scene sceneID="DFI-UU-EeO">
+            <objects>
+                <viewController id="5tw-sD-o4P" customClass="SelectedViewController" customModule="Kaipa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PER-QZ-O8x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="h8d-BS-BO3">
+                                <rect key="frame" x="16" y="98" width="382" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="rN8-5P-zpX"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Top Wear"/>
+                                    <segment title="Bottom Wear"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jle-bi-9HW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jle-bi-9HW" firstAttribute="trailing" secondItem="h8d-BS-BO3" secondAttribute="trailing" constant="16" id="2qa-va-U8k"/>
+                            <constraint firstItem="h8d-BS-BO3" firstAttribute="leading" secondItem="jle-bi-9HW" secondAttribute="leading" constant="16" id="mJ3-q1-OAL"/>
+                            <constraint firstItem="h8d-BS-BO3" firstAttribute="top" secondItem="jle-bi-9HW" secondAttribute="top" constant="10" id="o31-Bd-CPR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RHE-JF-gww"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="noG-OO-BG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407" y="518"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
