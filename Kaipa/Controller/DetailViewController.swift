@@ -21,6 +21,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var itemDate: UILabel!
     @IBOutlet weak var itemFavorite: UIButton!
     @IBOutlet weak var itemCategory: UILabel!
+    @IBOutlet weak var buttonChoose: UIButton!
     
     var img = UIImage()
     var name = ""
@@ -57,9 +58,14 @@ class DetailViewController: UIViewController {
         itemTag.text = tag
         itemFrequency.text = "\(frequency)"
         
-        
-        
-        itemDate.text = "\(convertDateFormatToString(date: date))"
+        //showing date condition
+        if frequency == 0 {
+            itemDate.text = "-"
+            buttonChoose.setTitle("Choose This Outfit", for: .normal)
+        } else {
+            itemDate.text = "\(convertDateFormatToString(date: date))"
+            buttonChoose.setTitle("Choose This Outfit Again", for: .normal)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

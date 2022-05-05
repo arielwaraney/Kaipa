@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90801AF28239101008ADE34 /* SelectedItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90801AE28239101008ADE34 /* SelectedItemTableCell.swift */; };
 		A9D0141E2817D1FE0033ED46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0141D2817D1FE0033ED46 /* AppDelegate.swift */; };
 		A9D014202817D1FE0033ED46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0141F2817D1FE0033ED46 /* SceneDelegate.swift */; };
 		A9D014222817D1FE0033ED46 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D014212817D1FE0033ED46 /* SelectionViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A90801AE28239101008ADE34 /* SelectedItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedItemTableCell.swift; sourceTree = "<group>"; };
 		A9D0141A2817D1FE0033ED46 /* Kaipa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaipa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D0141D2817D1FE0033ED46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D0141F2817D1FE0033ED46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				A9D014482818DA140033ED46 /* AddItemViewController.swift */,
 				A9D014432818C7390033ED46 /* ItemTableCell.swift */,
 				A9D01452281A84C90033ED46 /* DetailViewController.swift */,
+				A90801AE28239101008ADE34 /* SelectedItemTableCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				A9D0143D2818BE6B0033ED46 /* SelectedViewController.swift in Sources */,
 				A9D014492818DA140033ED46 /* AddItemViewController.swift in Sources */,
 				A9D0141E2817D1FE0033ED46 /* AppDelegate.swift in Sources */,
+				A90801AF28239101008ADE34 /* SelectedItemTableCell.swift in Sources */,
 				A9D014442818C7390033ED46 /* ItemTableCell.swift in Sources */,
 				A9D014202817D1FE0033ED46 /* SceneDelegate.swift in Sources */,
 				A9D01453281A84C90033ED46 /* DetailViewController.swift in Sources */,

@@ -10,13 +10,11 @@ import CoreData
 
 class SelectionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AddItemViewControllerProtocol  {
 
-    //KONEK OUTLET HERE
     @IBOutlet weak var categorySegmentControlOutlet: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
 
     var wearItemCollection = [WearEntity]()
     let searchController = UISearchController()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +31,6 @@ class SelectionViewController: UIViewController, UITableViewDelegate, UITableVie
         print("col: \(wearItemCollection.count)")
     }
     
-    // KONEK ACTION HERE
     @IBAction func segmentControlPressed(_ sender: Any) {
         switch categorySegmentControlOutlet.selectedSegmentIndex {
         case 0:
@@ -51,8 +48,8 @@ class SelectionViewController: UIViewController, UITableViewDelegate, UITableVie
         default:
             break
         }
-        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.prefersLargeTitles = true
         retrieveAllData()
@@ -152,13 +149,14 @@ class SelectionViewController: UIViewController, UITableViewDelegate, UITableVie
         return configuration
     }
     
-    let cellSpacingHeight: CGFloat = 5
-
-    
-     
     public func retrieveAllData(){
         //specified the data type of the output as array of wear entity
         let request: NSFetchRequest<WearEntity> = WearEntity.fetchRequest()
+      
+        //filtering
+        let query = NSPredicate(format: "isSelectedStatus = %d", false)
+        request.predicate = query
+        
         do {
             wearItemCollection = try context!.fetch(request)
         } catch {
@@ -171,19 +169,16 @@ class SelectionViewController: UIViewController, UITableViewDelegate, UITableVie
         let request: NSFetchRequest<WearEntity> = WearEntity.fetchRequest()
         
         //filtering
-        let query = NSPredicate(format: "category CONTAINS '\(key)'")
-        request.predicate = query
+        let queryOne = NSPredicate(format: "isSelectedStatus = %d", false)
+        let queryTwo =  NSPredicate(format: "category CONTAINS '\(key)'")
+        let queries = NSCompoundPredicate(andPredicateWithSubpredicates: [queryOne, queryTwo])
+        request.predicate = queries
         
         do {
             wearItemCollection = try context!.fetch(request)
         } catch {
             print("Error fetching data from context \(error)")
         }
-        tableView.reloadData()
-    }
-    
-    public func retrieveBottomData(){
-        
         tableView.reloadData()
     }
     
@@ -210,7 +205,6 @@ class SelectionViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         
         retrieveAllData()
-        tableView.reloadData()
     }
 }
 
